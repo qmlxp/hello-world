@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+            box-sizing:border-box;
+            margin:100px auto;
+            position:relative;
+            transform-style:preserve-3d;
+            transform:rotateX(0deg) rotateY(0deg);
+        }
+        ul li{
+            list-style:none;
+            width:200px;
+            height:200px;
+            font-size:60px;
+            text-align:center;
+            line-height:200px;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        ul li:nth-child(1){
+            background-color:red;
+            transform:translate(-150px,0px) rotateY(90deg);
+        }
+        ul li:nth-child(2){
+            background-color:green;
+            transform:translate(150px,0px) rotateY(90deg);
+        }
+        ul li:nth-child(3){
+            background-color:blue;
+            transform:translateY(-100px) rotateX(90deg) scale(1.5,1);
+        }
+        ul li:nth-child(4){
+            background-color:deeppink;
+            transform:translateY(100px) rotateX(90deg) scale(1.5,1);
+        }
+        ul li:nth-child(5){
+            background-color:yellow;
+            transform:translateZ(-100px) scale(1.5,1);
+        }
+        ul li:nth-child(6){
+            background-color:darkgrey;
+            transform:translateZ(100px) scale(1.5,1);
+        }
+        ul:hover{
+            transform:rotateX(360deg) rotateY(360deg);
+            transition:transform 3s;
+
+
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>
